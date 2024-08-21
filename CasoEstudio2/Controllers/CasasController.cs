@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace CasoEstudio2.Controllers
 {
-    public class HomeController : Controller
+    public class CasasController : Controller
     {
         public ActionResult Index()
         {
