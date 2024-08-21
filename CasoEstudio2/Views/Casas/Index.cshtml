@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main>
+    <section class="row mt-5" aria-labelledby="aspnetTitle">
+        <div class="text-center">
+            <h1>¡Bienvenido!</h1>
+        </div>
+        <h2 id="title">Seleccione una opcion:</h2>
+        <div class="menu-sec row">
+            <div class="menu-btn">
+                @Html.ActionLink("Consulta de Casas", "Consulta", "Casas", new { area = "" }, new { @class = "" })
+            </div>
+            <div class="menu-btn">
+                @Html.ActionLink("Alquiler de Casas", "Alquiler", "Casas", new { area = "" }, new { @class = "" })
+            </div>
+        </div>
+    </section>
+</main>
