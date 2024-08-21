@@ -14,7 +14,6 @@ namespace CasoEstudio2.Controllers
             return View();
         }
 
-
         [HttpGet]
         public ActionResult Consulta()
         {
@@ -35,5 +34,6 @@ namespace CasoEstudio2.Controllers
         // {
         //     return View();
         // }
+
     }
 }
