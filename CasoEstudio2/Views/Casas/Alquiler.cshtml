@@ -1,0 +1,78 @@
+﻿﻿@model CasoEstudio2.Entities.Alquiler
+
+@{
+    ViewBag.Title = "Alquiler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main class="container mt-5">
+    <h2 class="mb-3">Registro</h2>
+    <h3 style="color:red">@ViewBag.msj</h3>
+    @using (Html.BeginForm("Alquiler", "Casas", FormMethod.Post))
+    {
+        <div class="form-group mb-3">
+            @Html.Label("Seleccione una casa")
+            <div class="input-group mb-3">
+                @Html.DropDownListFor(m => m.Id_Compra,
+                (IEnumerable<SelectListItem>)ViewBag.ComprasPendientes,
+                new
+                {
+                    @class = "form-select",
+                    @id = "IdCasa",
+                    @required = "required",
+                    @onchange = "ConsultarPrecioCasa()"
+                })
+            </div>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="PrecioCasa">Precio mensual</label>
+            @Html.TextBoxFor(m => m.Saldo, new
+            {
+                @type = "number",
+                @class = "form-control",
+                @id = "PrecioCasa",
+                @required = "required",
+                @readonly = "readonly"
+            })
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="UsuarioAlquiler">Ingrese el nombre de usuario</label>
+            @Html.TextBoxFor(m => m.Abono, new
+            {
+                @type = "text",
+                @class = "form-control",
+                @id = "UsuarioAlquiler",
+                @required = "required"
+            })
+        </div>
+        <button type="submit" class="btn btn-primary">Alquilar</button>
+    }
+</main>
+
+@*
+    @section Scripts {
+        <script type="text/javascript">
+            function ConsultarPrecioCasa() {
+                var casaId = $('#IdCasa').val();
+
+                if (casaId) {
+                    $.ajax({
+                        url: '@Url.Action("******", "Casas")',
+                        type: 'GET',
+                        data: { id: casaId },
+                        success: function (data) {
+                            $('#PrecioCasa').val(data.******);
+                        },
+                        error: function () {
+                            alert('Error al obtener el precio');
+                        }
+                    });
+                } else {
+                    $('#PrecioCasa').val('');
+                }
+            }
+        </script>
+    }
+*@

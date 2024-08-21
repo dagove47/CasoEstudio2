@@ -1,33 +1,37 @@
-﻿
+﻿﻿@model List < CasoEstudio2.Entities.Consulta >
+
 @{
     ViewBag.Title = "Consulta";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <main class="container mt-5">
-    <h2>Consulta</h2>
+    <h2>Consulta de Casas</h2>
     <h3 style="color:red">@ViewBag.msj</h3>
     <table class="table table-striped">
         <thead>
             <tr class="bg-dark text-white">
-                <th scope="col">Codigo Compra</th>
-                <th scope="col">Descripcion</th>
+                <th scope="col">Descripción</th>
                 <th scope="col">Precio</th>
-                <th scope="col">Saldo</th>
+                <th scope="col">Usuario</th>
                 <th scope="col">Estado</th>
+                <th scope="col">Fecha</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var elem in Model)  // activar cuando ya exista conexion a la BD
+            @*
+            @foreach (var elem in Model)  
             {
                 <tr>
-                    <td>@elem.Id_Compra</td>
                     <td>@elem.Descripcion</td>
                     <td>@elem.Precio</td>
-                    <td>@elem.Saldo</td>
+                    <td>@elem.Usuario</td>
                     <td>@elem.Estado</td>
+                    <td>@elem.Fecha</td>
                 </tr>
             }
+            */
+            *@
         </tbody>
     </table>
 </main>
