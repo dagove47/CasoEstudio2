@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CasoEstudio2.Models
 {
-    public class Class1
+    public class CasasModel
     {
     }
 }

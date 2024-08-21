@@ -8,23 +8,32 @@ namespace CasoEstudio2.Controllers
 {
     public class CasasController : Controller
     {
+
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        [HttpGet]
+        public ActionResult Consulta()
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.msj = "";
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
+        [HttpGet]
+        public ActionResult Alquiler()
+        {
+            ViewBag.msj = "";
             return View();
         }
+
+        // [HttpPost]
+        // public ActionResult Alquiler()
+        // {
+        //     return View();
+        // }
+
     }
 }
