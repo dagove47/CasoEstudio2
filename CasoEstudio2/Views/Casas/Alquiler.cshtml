@@ -1,4 +1,4 @@
-﻿﻿@model CasoEstudio2.Entities.Alquiler
+﻿@model CasoEstudio2.Entities.Alquiler
 
 @{
     ViewBag.Title = "Alquiler";
@@ -6,15 +6,15 @@
 }
 
 <main class="container mt-5">
-    <h2 class="mb-3">Registro</h2>
+    <h2 class="mb-3">Alquiler de Casa</h2>
     <h3 style="color:red">@ViewBag.msj</h3>
     @using (Html.BeginForm("Alquiler", "Casas", FormMethod.Post))
     {
         <div class="form-group mb-3">
             @Html.Label("Seleccione una casa")
             <div class="input-group mb-3">
-                @Html.DropDownListFor(m => m.Id_Compra,
-                (IEnumerable<SelectListItem>)ViewBag.ComprasPendientes,
+                @Html.DropDownListFor(m => m.IdCasa,
+                (IEnumerable<SelectListItem>)ViewBag.CasasDisponibles,
                 new
                 {
                     @class = "form-select",
@@ -27,7 +27,7 @@
 
         <div class="form-group mb-3">
             <label for="PrecioCasa">Precio mensual</label>
-            @Html.TextBoxFor(m => m.Saldo, new
+            @Html.TextBoxFor(m => m.Precio, new
             {
                 @type = "number",
                 @class = "form-control",
@@ -39,7 +39,7 @@
 
         <div class="form-group mb-3">
             <label for="UsuarioAlquiler">Ingrese el nombre de usuario</label>
-            @Html.TextBoxFor(m => m.Abono, new
+            @Html.TextBoxFor(m => m.UsuarioAlquiler, new
             {
                 @type = "text",
                 @class = "form-control",
@@ -51,28 +51,26 @@
     }
 </main>
 
-@*
-    @section Scripts {
-        <script type="text/javascript">
-            function ConsultarPrecioCasa() {
-                var casaId = $('#IdCasa').val();
+@section Scripts {
+    <script type="text/javascript">
+        function ConsultarPrecioCasa() {
+            var casaId = $('#IdCasa').val();
 
-                if (casaId) {
-                    $.ajax({
-                        url: '@Url.Action("******", "Casas")',
-                        type: 'GET',
-                        data: { id: casaId },
-                        success: function (data) {
-                            $('#PrecioCasa').val(data.******);
-                        },
-                        error: function () {
-                            alert('Error al obtener el precio');
-                        }
-                    });
-                } else {
-                    $('#PrecioCasa').val('');
-                }
+            if (casaId) {
+                $.ajax({
+                    url: '@Url.Action("ConsultarPrecio", "Casas")', // Ajusta la acción y controlador según tu implementación
+                    type: 'GET',
+                    data: { id: casaId },
+                    success: function (data) {
+                        $('#PrecioCasa').val(data.precio);
+                    },
+                    error: function () {
+                        alert('Error al obtener el precio');
+                    }
+                });
+            } else {
+                $('#PrecioCasa').val('');
             }
-        </script>
-    }
-*@
+        }
+    </script>
+}

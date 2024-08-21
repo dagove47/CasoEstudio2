@@ -1,12 +1,138 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Universidad\\CasoEstudio2\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\CasoEstudio2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|c:\\casoestudio2\\casoestudio2\\controllers\\casascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|solutionrelative:casoestudio2\\controllers\\casascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|c:\\casoestudio2\\casoestudio2\\views\\casas\\consulta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|solutionrelative:casoestudio2\\views\\casas\\consulta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|c:\\casoestudio2\\casoestudio2\\views\\casas\\alquiler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|solutionrelative:casoestudio2\\views\\casas\\alquiler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|c:\\casoestudio2\\casoestudio2\\entities\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|solutionrelative:casoestudio2\\entities\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|c:\\casoestudio2\\casoestudio2\\models\\casasmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|solutionrelative:casoestudio2\\models\\casasmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|c:\\casoestudio2\\casoestudio2\\entities\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|solutionrelative:casoestudio2\\entities\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|c:\\casoestudio2\\casoestudio2\\basedatos\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{3B69AB8C-941A-4BB8-BFD5-D39BF1D3DF7B}|CasoEstudio2\\CasoEstudio2.csproj|solutionrelative:casoestudio2\\basedatos\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Alquiler.cshtml",
+              "DocumentMoniker": "C:\\CasoEstudio2\\CasoEstudio2\\Views\\Casas\\Alquiler.cshtml",
+              "RelativeDocumentMoniker": "CasoEstudio2\\Views\\Casas\\Alquiler.cshtml",
+              "ToolTip": "C:\\CasoEstudio2\\CasoEstudio2\\Views\\Casas\\Alquiler.cshtml*",
+              "RelativeToolTip": "CasoEstudio2\\Views\\Casas\\Alquiler.cshtml*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-21T20:56:11.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\CasoEstudio2\\CasoEstudio2\\baseDatos\\Model1.edmx",
+              "RelativeDocumentMoniker": "CasoEstudio2\\baseDatos\\Model1.edmx",
+              "ToolTip": "C:\\CasoEstudio2\\CasoEstudio2\\baseDatos\\Model1.edmx [Diagram1]*",
+              "RelativeToolTip": "CasoEstudio2\\baseDatos\\Model1.edmx [Diagram1]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-08-21T20:29:32.591Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Consulta.cshtml",
+              "DocumentMoniker": "C:\\CasoEstudio2\\CasoEstudio2\\Views\\Casas\\Consulta.cshtml",
+              "RelativeDocumentMoniker": "CasoEstudio2\\Views\\Casas\\Consulta.cshtml",
+              "ToolTip": "C:\\CasoEstudio2\\CasoEstudio2\\Views\\Casas\\Consulta.cshtml",
+              "RelativeToolTip": "CasoEstudio2\\Views\\Casas\\Consulta.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-21T19:22:47.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CasasModel.cs",
+              "DocumentMoniker": "C:\\CasoEstudio2\\CasoEstudio2\\Models\\CasasModel.cs",
+              "RelativeDocumentMoniker": "CasoEstudio2\\Models\\CasasModel.cs",
+              "ToolTip": "C:\\CasoEstudio2\\CasoEstudio2\\Models\\CasasModel.cs",
+              "RelativeToolTip": "CasoEstudio2\\Models\\CasasModel.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAADwvzkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T18:25:50.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Consulta.cs",
+              "DocumentMoniker": "C:\\CasoEstudio2\\CasoEstudio2\\Entities\\Consulta.cs",
+              "RelativeDocumentMoniker": "CasoEstudio2\\Entities\\Consulta.cs",
+              "ToolTip": "C:\\CasoEstudio2\\CasoEstudio2\\Entities\\Consulta.cs",
+              "RelativeToolTip": "CasoEstudio2\\Entities\\Consulta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T17:37:21.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CasasController.cs",
+              "DocumentMoniker": "C:\\CasoEstudio2\\CasoEstudio2\\Controllers\\CasasController.cs",
+              "RelativeDocumentMoniker": "CasoEstudio2\\Controllers\\CasasController.cs",
+              "ToolTip": "C:\\CasoEstudio2\\CasoEstudio2\\Controllers\\CasasController.cs*",
+              "RelativeToolTip": "CasoEstudio2\\Controllers\\CasasController.cs*",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T19:17:54.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Alquiler.cs",
+              "DocumentMoniker": "C:\\CasoEstudio2\\CasoEstudio2\\Entities\\Alquiler.cs",
+              "RelativeDocumentMoniker": "CasoEstudio2\\Entities\\Alquiler.cs",
+              "ToolTip": "C:\\CasoEstudio2\\CasoEstudio2\\Entities\\Alquiler.cs",
+              "RelativeToolTip": "CasoEstudio2\\Entities\\Alquiler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T17:37:17.449Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

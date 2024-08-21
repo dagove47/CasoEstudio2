@@ -1,4 +1,4 @@
-﻿﻿@model List < CasoEstudio2.Entities.Consulta >
+﻿@model List<CasoEstudio2.Entities.Consulta>
 
 @{
     ViewBag.Title = "Consulta";
@@ -19,19 +19,16 @@
             </tr>
         </thead>
         <tbody>
-            @*
-            @foreach (var elem in Model)  
+            @foreach (var elem in Model)
             {
                 <tr>
                     <td>@elem.Descripcion</td>
                     <td>@elem.Precio</td>
-                    <td>@elem.Usuario</td>
+                    <td>@elem.Usuario</td> <!-- Mostrar Usuario -->
                     <td>@elem.Estado</td>
-                    <td>@elem.Fecha</td>
+                    <td>@elem.fecha?.ToString("dd/MM/yyyy")</td> <!-- Mostrar fecha en formato dd/MM/yyyy -->
                 </tr>
             }
-            */
-            *@
         </tbody>
     </table>
 </main>

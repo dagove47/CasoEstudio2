@@ -46,5 +46,33 @@ namespace CasoEstudio2.baseDatos
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ConsultarCasas_Result>("sp_ConsultarCasas");
         }
+    
+        public virtual ObjectResult<sp_ConsultarCasasDisponibles_Result> sp_ConsultarCasasDisponibles()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ConsultarCasasDisponibles_Result>("sp_ConsultarCasasDisponibles");
+        }
+    
+        public virtual ObjectResult<ConsultarCasas_Result> ConsultarCasas()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ConsultarCasas_Result>("ConsultarCasas");
+        }
+    
+        public virtual int AlquilarCasa(Nullable<long> idCasa, string usuarioAlquiler)
+        {
+            var idCasaParameter = idCasa.HasValue ?
+                new ObjectParameter("IdCasa", idCasa) :
+                new ObjectParameter("IdCasa", typeof(long));
+    
+            var usuarioAlquilerParameter = usuarioAlquiler != null ?
+                new ObjectParameter("UsuarioAlquiler", usuarioAlquiler) :
+                new ObjectParameter("UsuarioAlquiler", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("AlquilarCasa", idCasaParameter, usuarioAlquilerParameter);
+        }
+    
+        public virtual ObjectResult<ConsultarCasasDisponibles_Result> ConsultarCasasDisponibles()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ConsultarCasasDisponibles_Result>("ConsultarCasasDisponibles");
+        }
     }
 }
