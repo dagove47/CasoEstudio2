@@ -20,7 +20,7 @@ namespace CasoEstudio2.Models
                     Precio = c.PrecioCasa,
                     Usuario = c.Usuario,
                     Estado = string.IsNullOrEmpty(c.Usuario) ? "Disponible" : "Reservada", // Directamente de la consulta
-                    fecha = c.FechaAlquiler.HasValue ? c.FechaAlquiler.Value : (DateTime?)null // Manejo de fecha
+                    fecha = c.FechaAlquiler // Manejo de fecha
                 }).ToList();
             }
         }
@@ -32,7 +32,8 @@ namespace CasoEstudio2.Models
                 return context.ConsultarCasasDisponibles().Select(c => new Consulta
                 {
                     IdCasa = c.IdCasa,
-                    Descripcion = c.DescripcionCasa
+                    Descripcion = c.DescripcionCasa,
+                    Precio = c.PrecioCasa
                 }).ToList();
             }
         }

@@ -57,7 +57,7 @@ namespace CasoEstudio2.Controllers
         [HttpGet]
         public JsonResult ConsultarPrecio(long id)
         {
-            var casa = casaModel.ConsultarCasas().FirstOrDefault(c => c.IdCasa == id);
+            var casa = casaModel.ObtenerCasasDisponibles().FirstOrDefault(c => c.IdCasa == id);
             if (casa != null)
             {
                 return Json(new { precio = casa.Precio }, JsonRequestBehavior.AllowGet);
